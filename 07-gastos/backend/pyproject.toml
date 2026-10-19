@@ -1,0 +1,9 @@
+[project]
+name = "07-gastos-backend"
+version = "0.1.0"
+description = "Control de gastos - backend con FastAPI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.146.0",
+]

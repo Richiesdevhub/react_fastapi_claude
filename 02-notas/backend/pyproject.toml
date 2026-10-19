@@ -1,0 +1,9 @@
+[project]
+name = "02-notas-backend"
+version = "0.1.0"
+description = "Notas con búsqueda y edición - backend con FastAPI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.146.0",
+]

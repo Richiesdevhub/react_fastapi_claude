@@ -1,0 +1,9 @@
+[project]
+name = "08-acortador-backend"
+version = "0.1.0"
+description = "Acortador de URLs - backend con FastAPI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.146.0",
+]
