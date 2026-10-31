@@ -20,7 +20,10 @@ router = APIRouter(prefix="/api")
 class TodoIn(BaseModel):
     model_config = ConfigDict(str_strip_whitespace=True)  # quita espacios sobrantes
     title: str = Field(min_length=1, max_length=200)
-
+""" model_config es un atributo especial de BaseModel que permite configurar el comportamiento 
+ del modelo. En este caso, se utiliza para habilitar la opción str_strip_whitespace, que 
+ elimina los espacios en blanco al inicio y al final de las cadenas de texto. 
+ Esto asegura que los títulos de las tareas no contengan espacios innecesarios."""
 
 class Todo(TodoIn):
     id: int
